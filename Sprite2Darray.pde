@@ -1,4 +1,7 @@
 /* Amulya Mulakala, 3/21/2025 , Modify an existing program to customize a grid-based structure, practicing use of object-oriented programming and 2D array structure and syntax. Document code with comments and create a simple HTML page to embed their Processing sketch and caption it, reinforcing both programming and web development skills. */
+/* Wasn't here for entirety of project so working through adding comments to the code */
+
+
 // Add a comment to each "//" that you see. 
 int cols = 6;  // initalizes the col variable to 6
 int rows = 5;  // initializes the rows variable to 5
@@ -13,7 +16,7 @@ void setup() {
   loadSpriteFrames();  //calls the loadSpriteFrames() method and loads each index of the array with a different frame of the sprite. 
   sprites = new Sprite[cols][rows];
 
-  // loads a new Sprite object into every index position of the 2D array; initalizes the 
+  // loads a new Sprite object into every index position of the 2D array; initalizes the x and y variables that impact the position of the sprite object
 
   for (int i = 0; i < cols; i++) {
     for (int j = 0; j < rows; j++) {
@@ -27,7 +30,7 @@ void setup() {
 void draw() {
   background(0);
   
-  // 
+  // iterates through the 2D array; calling upon the update() and display() methods. 
   for (int i = 0; i < cols; i++) {
     for (int j = 0; j < rows; j++) {
       sprites[i][j].update();
